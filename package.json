@@ -4,7 +4,8 @@
   "description": "This is a node.js backend project starter",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "serve": "npx nodemon src/index.js"
   },
   "keywords": [
     "node.js"
@@ -14,12 +15,16 @@
   "dependencies": {
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
+    "dotenv": "^16.4.5",
     "express": "^4.21.2",
     "express-session": "^1.18.1",
     "jsonwebtoken": "^9.0.2",
-    "mongodb": "^6.11.0",
-    "mongoose": "^8.8.4",
-    "nodejs-starter": "file:"
+    "meditouch-backend": "file:",
+    "mongodb": "^6.10.0",
+    "mongoose": "^8.8.3",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
   }
 }

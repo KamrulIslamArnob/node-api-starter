@@ -33,7 +33,7 @@ connectDB();
 
 
 // Routes
-
+app.use('/studentcourse', require('./student_course.routes.js'));
 
 
 // get the port from the environment
